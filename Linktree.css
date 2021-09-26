@@ -1,0 +1,109 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  text-align: center;
+  background: #c3aac3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c3aac3), to(#fefbff));
+  background: linear-gradient(180deg, #c3aac3 0%, #fefbff 100%);
+  color: black;
+  font-family: 'Cairo', sans-serif;
+  min-height: 100vh;
+}
+
+.logo {
+  width: 300px;
+}
+
+a:hover, a.featured:hover {
+  background-color: pink;
+  color: #ffffff;
+}
+
+a {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+  padding: 15px 20px;
+  font-size: 0.90rem;
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+a.featured {
+  position: relative;
+  background-color: #ffffff;
+  color: #c3aac3;
+  font-weight: bold;
+}
+
+a.featured:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid #c3aac3;
+}
+
+h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.channels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.channels a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #c3aac3 42;
+  border: none;
+}
+
+.channels a img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 10px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.channels a:last-child {
+  margin-right: 0px;
+}
+
+.channels a:hover {
+  background-color: #c3aac3 42;
+}
+/*# sourceMappingURL=Linktree.css.map */
